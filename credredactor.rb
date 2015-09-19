@@ -30,7 +30,7 @@ ATTRIBUTES
 	:delimiter
 		defines the delimiter segmenting the [username|domain] and password field
 		defaults to ':'
-			atelier86.net\archangel:7ryh4rd3R
+			test.net\archangel:7ryh4rd3R
 		works hand-in-hand with :format
 
 	:domains
@@ -42,9 +42,9 @@ ATTRIBUTES
 		see the section defining delimiters below
 		Credential Formats:
 			a --> [user]@[domain][delimiter][password]
-				archangel@atelier86.net:7ryh4rd3R
+				archangel@test.net:7ryh4rd3R
 			b --> [domain]\[user][delimiter]][password]
-				atelier86.net\archangel:7ryh4rd3R
+				test.net\archangel:7ryh4rd3R
 			c --> [username][delimiter][password]
 				archangel:7ryh4rd3R
 
@@ -229,8 +229,8 @@ class Interface
 	def self.parse(args)
 		options = {}
 
-		formats = {:a=>["[user]@[domain][delimiter][password]","archangel@atelier86.net:7ryh4rd3R"],
-		   :b=>["[domain][user]\\[delimiter]][password]","atelier86.net\\archangel:7ryh4rd3R"],
+		formats = {:a=>["[user]@[domain][delimiter][password]","archangel@test.net:7ryh4rd3R"],
+		   :b=>["[domain][user]\\[delimiter]][password]","test.net\\archangel:7ryh4rd3R"],
 		   :c=>["[username][delimiter][password]","archangel:7ryh4rd3R"]}
 
 		formed_formats = String.new()
